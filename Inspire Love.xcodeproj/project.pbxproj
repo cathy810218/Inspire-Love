@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6B6C882F1B69B12C00F88EDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6C882E1B69B12C00F88EDB /* AppDelegate.swift */; };
+		6B6C88311B69B12C00F88EDB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6C88301B69B12C00F88EDB /* ViewController.swift */; };
+		6B6C88341B69B12C00F88EDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B6C88321B69B12C00F88EDB /* Main.storyboard */; };
+		6B6C88361B69B12C00F88EDB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B6C88351B69B12C00F88EDB /* Images.xcassets */; };
+		6B6C88391B69B12C00F88EDB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B6C88371B69B12C00F88EDB /* LaunchScreen.xib */; };
+		6B6C88451B69B12C00F88EDB /* Inspire_LoveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6C88441B69B12C00F88EDB /* Inspire_LoveTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6B6C883F1B69B12C00F88EDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6B6C88211B69B12C00F88EDB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B6C88281B69B12C00F88EDB;
+			remoteInfo = "Inspire Love";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6B6C88291B69B12C00F88EDB /* Inspire Love.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Inspire Love.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B6C882D1B69B12C00F88EDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B6C882E1B69B12C00F88EDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6B6C88301B69B12C00F88EDB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6B6C88331B69B12C00F88EDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6B6C88351B69B12C00F88EDB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6B6C88381B69B12C00F88EDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		6B6C883E1B69B12C00F88EDB /* Inspire LoveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Inspire LoveTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B6C88431B69B12C00F88EDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B6C88441B69B12C00F88EDB /* Inspire_LoveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inspire_LoveTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6B6C88261B69B12C00F88EDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B6C883B1B69B12C00F88EDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6B6C88201B69B12C00F88EDB = {
+			isa = PBXGroup;
+			children = (
+				6B6C882B1B69B12C00F88EDB /* Inspire Love */,
+				6B6C88411B69B12C00F88EDB /* Inspire LoveTests */,
+				6B6C882A1B69B12C00F88EDB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6B6C882A1B69B12C00F88EDB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6B6C88291B69B12C00F88EDB /* Inspire Love.app */,
+				6B6C883E1B69B12C00F88EDB /* Inspire LoveTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6B6C882B1B69B12C00F88EDB /* Inspire Love */ = {
+			isa = PBXGroup;
+			children = (
+				6B6C882E1B69B12C00F88EDB /* AppDelegate.swift */,
+				6B6C88301B69B12C00F88EDB /* ViewController.swift */,
+				6B6C88321B69B12C00F88EDB /* Main.storyboard */,
+				6B6C88351B69B12C00F88EDB /* Images.xcassets */,
+				6B6C88371B69B12C00F88EDB /* LaunchScreen.xib */,
+				6B6C882C1B69B12C00F88EDB /* Supporting Files */,
+			);
+			path = "Inspire Love";
+			sourceTree = "<group>";
+		};
+		6B6C882C1B69B12C00F88EDB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6B6C882D1B69B12C00F88EDB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6B6C88411B69B12C00F88EDB /* Inspire LoveTests */ = {
+			isa = PBXGroup;
+			children = (
+				6B6C88441B69B12C00F88EDB /* Inspire_LoveTests.swift */,
+				6B6C88421B69B12C00F88EDB /* Supporting Files */,
+			);
+			path = "Inspire LoveTests";
+			sourceTree = "<group>";
+		};
+		6B6C88421B69B12C00F88EDB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6B6C88431B69B12C00F88EDB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6B6C88281B69B12C00F88EDB /* Inspire Love */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B6C88481B69B12C00F88EDB /* Build configuration list for PBXNativeTarget "Inspire Love" */;
+			buildPhases = (
+				6B6C88251B69B12C00F88EDB /* Sources */,
+				6B6C88261B69B12C00F88EDB /* Frameworks */,
+				6B6C88271B69B12C00F88EDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Inspire Love";
+			productName = "Inspire Love";
+			productReference = 6B6C88291B69B12C00F88EDB /* Inspire Love.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6B6C883D1B69B12C00F88EDB /* Inspire LoveTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B6C884B1B69B12C00F88EDB /* Build configuration list for PBXNativeTarget "Inspire LoveTests" */;
+			buildPhases = (
+				6B6C883A1B69B12C00F88EDB /* Sources */,
+				6B6C883B1B69B12C00F88EDB /* Frameworks */,
+				6B6C883C1B69B12C00F88EDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6B6C88401B69B12C00F88EDB /* PBXTargetDependency */,
+			);
+			name = "Inspire LoveTests";
+			productName = "Inspire LoveTests";
+			productReference = 6B6C883E1B69B12C00F88EDB /* Inspire LoveTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6B6C88211B69B12C00F88EDB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "The Love Foundation";
+				TargetAttributes = {
+					6B6C88281B69B12C00F88EDB = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					6B6C883D1B69B12C00F88EDB = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 6B6C88281B69B12C00F88EDB;
+					};
+				};
+			};
+			buildConfigurationList = 6B6C88241B69B12C00F88EDB /* Build configuration list for PBXProject "Inspire Love" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6B6C88201B69B12C00F88EDB;
+			productRefGroup = 6B6C882A1B69B12C00F88EDB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6B6C88281B69B12C00F88EDB /* Inspire Love */,
+				6B6C883D1B69B12C00F88EDB /* Inspire LoveTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6B6C88271B69B12C00F88EDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B6C88341B69B12C00F88EDB /* Main.storyboard in Resources */,
+				6B6C88391B69B12C00F88EDB /* LaunchScreen.xib in Resources */,
+				6B6C88361B69B12C00F88EDB /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B6C883C1B69B12C00F88EDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6B6C88251B69B12C00F88EDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B6C88311B69B12C00F88EDB /* ViewController.swift in Sources */,
+				6B6C882F1B69B12C00F88EDB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B6C883A1B69B12C00F88EDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B6C88451B69B12C00F88EDB /* Inspire_LoveTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6B6C88401B69B12C00F88EDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6B6C88281B69B12C00F88EDB /* Inspire Love */;
+			targetProxy = 6B6C883F1B69B12C00F88EDB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6B6C88321B69B12C00F88EDB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B6C88331B69B12C00F88EDB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6B6C88371B69B12C00F88EDB /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B6C88381B69B12C00F88EDB /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6B6C88461B69B12C00F88EDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6B6C88471B69B12C00F88EDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6B6C88491B69B12C00F88EDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Inspire Love/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6B6C884A1B69B12C00F88EDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Inspire Love/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6B6C884C1B69B12C00F88EDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Inspire LoveTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Inspire Love.app/Inspire Love";
+			};
+			name = Debug;
+		};
+		6B6C884D1B69B12C00F88EDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Inspire LoveTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Inspire Love.app/Inspire Love";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6B6C88241B69B12C00F88EDB /* Build configuration list for PBXProject "Inspire Love" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B6C88461B69B12C00F88EDB /* Debug */,
+				6B6C88471B69B12C00F88EDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B6C88481B69B12C00F88EDB /* Build configuration list for PBXNativeTarget "Inspire Love" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B6C88491B69B12C00F88EDB /* Debug */,
+				6B6C884A1B69B12C00F88EDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6B6C884B1B69B12C00F88EDB /* Build configuration list for PBXNativeTarget "Inspire LoveTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B6C884C1B69B12C00F88EDB /* Debug */,
+				6B6C884D1B69B12C00F88EDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6B6C88211B69B12C00F88EDB /* Project object */;
+}
