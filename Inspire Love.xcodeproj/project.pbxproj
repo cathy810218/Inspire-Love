@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B0E9EDF1B70B1AF006DFCFF /* TestingArray.json in Resources */ = {isa = PBXBuildFile; fileRef = 6B0E9EDE1B70B1AF006DFCFF /* TestingArray.json */; };
 		6B6C882F1B69B12C00F88EDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6C882E1B69B12C00F88EDB /* AppDelegate.swift */; };
 		6B6C88311B69B12C00F88EDB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6C88301B69B12C00F88EDB /* ViewController.swift */; };
 		6B6C88341B69B12C00F88EDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B6C88321B69B12C00F88EDB /* Main.storyboard */; };
 		6B6C88361B69B12C00F88EDB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B6C88351B69B12C00F88EDB /* Images.xcassets */; };
 		6B6C88391B69B12C00F88EDB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B6C88371B69B12C00F88EDB /* LaunchScreen.xib */; };
 		6B6C88451B69B12C00F88EDB /* Inspire_LoveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6C88441B69B12C00F88EDB /* Inspire_LoveTests.swift */; };
+		6B6C88551B69C17300F88EDB /* inspire-love-app-icon-heart_80.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B6C88541B69C17300F88EDB /* inspire-love-app-icon-heart_80.png */; };
+		6BC6D0D11B7028D0009E86C4 /* quotes.json in Resources */ = {isa = PBXBuildFile; fileRef = 6BC6D0D01B7028D0009E86C4 /* quotes.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6B0E9EDE1B70B1AF006DFCFF /* TestingArray.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TestingArray.json; sourceTree = "<group>"; };
 		6B6C88291B69B12C00F88EDB /* Inspire Love.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Inspire Love.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B6C882D1B69B12C00F88EDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B6C882E1B69B12C00F88EDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +40,8 @@
 		6B6C883E1B69B12C00F88EDB /* Inspire LoveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Inspire LoveTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B6C88431B69B12C00F88EDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B6C88441B69B12C00F88EDB /* Inspire_LoveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inspire_LoveTests.swift; sourceTree = "<group>"; };
+		6B6C88541B69C17300F88EDB /* inspire-love-app-icon-heart_80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "inspire-love-app-icon-heart_80.png"; path = "../../../../../Downloads/fwdvolunteermatchinspireloveapp-2/inspire-love-app-icon-heart_80.png"; sourceTree = "<group>"; };
+		6BC6D0D01B7028D0009E86C4 /* quotes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = quotes.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,11 +83,8 @@
 		6B6C882B1B69B12C00F88EDB /* Inspire Love */ = {
 			isa = PBXGroup;
 			children = (
-				6B6C882E1B69B12C00F88EDB /* AppDelegate.swift */,
 				6B6C88301B69B12C00F88EDB /* ViewController.swift */,
 				6B6C88321B69B12C00F88EDB /* Main.storyboard */,
-				6B6C88351B69B12C00F88EDB /* Images.xcassets */,
-				6B6C88371B69B12C00F88EDB /* LaunchScreen.xib */,
 				6B6C882C1B69B12C00F88EDB /* Supporting Files */,
 			);
 			path = "Inspire Love";
@@ -90,6 +93,12 @@
 		6B6C882C1B69B12C00F88EDB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6BC6D0D01B7028D0009E86C4 /* quotes.json */,
+				6B0E9EDE1B70B1AF006DFCFF /* TestingArray.json */,
+				6B6C88541B69C17300F88EDB /* inspire-love-app-icon-heart_80.png */,
+				6B6C88371B69B12C00F88EDB /* LaunchScreen.xib */,
+				6B6C88351B69B12C00F88EDB /* Images.xcassets */,
+				6B6C882E1B69B12C00F88EDB /* AppDelegate.swift */,
 				6B6C882D1B69B12C00F88EDB /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -192,8 +201,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B0E9EDF1B70B1AF006DFCFF /* TestingArray.json in Resources */,
 				6B6C88341B69B12C00F88EDB /* Main.storyboard in Resources */,
+				6BC6D0D11B7028D0009E86C4 /* quotes.json in Resources */,
 				6B6C88391B69B12C00F88EDB /* LaunchScreen.xib in Resources */,
+				6B6C88551B69C17300F88EDB /* inspire-love-app-icon-heart_80.png in Resources */,
 				6B6C88361B69B12C00F88EDB /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,6 +423,7 @@
 				6B6C884A1B69B12C00F88EDB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6B6C884B1B69B12C00F88EDB /* Build configuration list for PBXNativeTarget "Inspire LoveTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +432,7 @@
 				6B6C884D1B69B12C00F88EDB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
