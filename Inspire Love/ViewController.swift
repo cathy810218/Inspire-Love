@@ -10,8 +10,9 @@ import UIKit
 
 class ViewController: UIViewController, UIGestureRecognizerDelegate {
   
-  var quotesToDisplay: [String] = []
+  var quotesToDisplay: [String]?
   var count = 0
+  
   @IBOutlet weak var quoteLabel: UILabel!
   
   func jsonData(jsonData : NSData) -> [String] {
@@ -29,17 +30,24 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
     if let filepath = NSBundle.mainBundle().pathForResource("TestingArray", ofType: "json") {
       if let data = NSData(contentsOfFile: filepath) {
         quotesToDisplay = jsonData(data)
-        quoteLabel.text = quotesToDisplay[count] // initially count = 0
+        
+        if let quotesToDisplay = quotesToDisplay {
+          var eachQuote = quotesToDisplay[count]
+          quoteLabel.text = eachQuote
+        }
       }
     }
-
+    
     var tapGestrue = UITapGestureRecognizer(target: self, action: Selector("handleTapGesture:"))
     view.addGestureRecognizer(tapGestrue)
     
   }
   
   func handleTapGesture(tapGesture: UITapGestureRecognizer ) {
-    quoteLabel.text = quotesToDisplay[++count % quotesToDisplay.count] // in order to loop through the whole array over and over again
+    
+    if let quotesToDisplay = quotesToDisplay {
+      quoteLabel.text = quotesToDisplay[++count % quotesToDisplay.count]
+    }
   }
   
   

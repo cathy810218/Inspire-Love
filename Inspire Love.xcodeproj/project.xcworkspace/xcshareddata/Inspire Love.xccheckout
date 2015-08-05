@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>67E49C28-800C-4E85-A370-8D491DD74C7D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Inspire Love</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>4104595FE1D843ED3382481472D429C417798A8F</key>
+		<string>github.com:cathy810218/TheInspireLoveApp.git</string>
+		<key>676FA7DE3FDB5D15A274DDB5402BD35DE71E07AD</key>
+		<string>github.com:cathy810218/TheInspireLoveApp.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Inspire Love.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>4104595FE1D843ED3382481472D429C417798A8F</key>
+		<string>../..</string>
+		<key>676FA7DE3FDB5D15A274DDB5402BD35DE71E07AD</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:cathy810218/TheInspireLoveApp.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>4104595FE1D843ED3382481472D429C417798A8F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>676FA7DE3FDB5D15A274DDB5402BD35DE71E07AD</string>
+			<key>IDESourceControlWCCName</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>4104595FE1D843ED3382481472D429C417798A8F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Inspire%20Love</string>
+		</dict>
+	</array>
+</dict>
+</plist>
