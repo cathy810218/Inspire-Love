@@ -14,7 +14,7 @@
 		6B6C88361B69B12C00F88EDB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B6C88351B69B12C00F88EDB /* Images.xcassets */; };
 		6B6C88391B69B12C00F88EDB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B6C88371B69B12C00F88EDB /* LaunchScreen.xib */; };
 		6B6C88451B69B12C00F88EDB /* Inspire_LoveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6C88441B69B12C00F88EDB /* Inspire_LoveTests.swift */; };
-		6B6C88551B69C17300F88EDB /* inspire-love-app-icon-heart_80.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B6C88541B69C17300F88EDB /* inspire-love-app-icon-heart_80.png */; };
+		6B6C88551B69C17300F88EDB /* NavBarIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B6C88541B69C17300F88EDB /* NavBarIcon.png */; };
 		6BC6D0D11B7028D0009E86C4 /* quotes.json in Resources */ = {isa = PBXBuildFile; fileRef = 6BC6D0D01B7028D0009E86C4 /* quotes.json */; };
 /* End PBXBuildFile section */
 
@@ -40,7 +40,7 @@
 		6B6C883E1B69B12C00F88EDB /* Inspire LoveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Inspire LoveTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B6C88431B69B12C00F88EDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B6C88441B69B12C00F88EDB /* Inspire_LoveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inspire_LoveTests.swift; sourceTree = "<group>"; };
-		6B6C88541B69C17300F88EDB /* inspire-love-app-icon-heart_80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "inspire-love-app-icon-heart_80.png"; path = "../../../../../Downloads/fwdvolunteermatchinspireloveapp-2/inspire-love-app-icon-heart_80.png"; sourceTree = "<group>"; };
+		6B6C88541B69C17300F88EDB /* NavBarIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NavBarIcon.png; path = "../../../../../Downloads/fwdvolunteermatchinspireloveapp-2/NavBarIcon.png"; sourceTree = "<group>"; };
 		6BC6D0D01B7028D0009E86C4 /* quotes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = quotes.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,7 +95,7 @@
 			children = (
 				6BC6D0D01B7028D0009E86C4 /* quotes.json */,
 				6B0E9EDE1B70B1AF006DFCFF /* TestingArray.json */,
-				6B6C88541B69C17300F88EDB /* inspire-love-app-icon-heart_80.png */,
+				6B6C88541B69C17300F88EDB /* NavBarIcon.png */,
 				6B6C88371B69B12C00F88EDB /* LaunchScreen.xib */,
 				6B6C88351B69B12C00F88EDB /* Images.xcassets */,
 				6B6C882E1B69B12C00F88EDB /* AppDelegate.swift */,
@@ -170,6 +170,7 @@
 				TargetAttributes = {
 					6B6C88281B69B12C00F88EDB = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 597HR9EHGW;
 					};
 					6B6C883D1B69B12C00F88EDB = {
 						CreatedOnToolsVersion = 6.4;
@@ -205,7 +206,7 @@
 				6B6C88341B69B12C00F88EDB /* Main.storyboard in Resources */,
 				6BC6D0D11B7028D0009E86C4 /* quotes.json in Resources */,
 				6B6C88391B69B12C00F88EDB /* LaunchScreen.xib in Resources */,
-				6B6C88551B69C17300F88EDB /* inspire-love-app-icon-heart_80.png in Resources */,
+				6B6C88551B69C17300F88EDB /* NavBarIcon.png in Resources */,
 				6B6C88361B69B12C00F88EDB /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,9 +355,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Inspire Love/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -364,9 +369,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Inspire Love/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

@@ -8,31 +8,22 @@
 
 import UIKit
 
-class ViewController: UIViewController, UIGestureRecognizerDelegate {
+class ViewController: UIViewController, UIGestureRecognizerDelegate, UIImagePickerControllerDelegate {
   
-  var quotesToDisplay: [String]?
+  var quotes: [String]?
   var count = 0
   
   @IBOutlet weak var quoteLabel: UILabel!
   
-  func jsonData(jsonData : NSData) -> [String] {
-    var error : NSError?
-    if let quote = NSJSONSerialization.JSONObjectWithData(jsonData, options: nil, error: &error) as? [String] {
-      return quote
-    }
-    return []
-  }
-  
+
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
-    //        self.view.backgroundColor = UIColor(patternImage: UIImage(named: ))
-    if let filepath = NSBundle.mainBundle().pathForResource("TestingArray", ofType: "json") {
+    
+    if let filepath = NSBundle.mainBundle().pathForResource("quotes", ofType: "json") {
       if let data = NSData(contentsOfFile: filepath) {
-        quotesToDisplay = jsonData(data)
-        
-        if let quotesToDisplay = quotesToDisplay {
-          var eachQuote = quotesToDisplay[count]
+        quotes = jsonData(data)
+        if let quotes = quotes {
+          var eachQuote = quotes[count] // to display the first quote
           quoteLabel.text = eachQuote
         }
       }
@@ -40,22 +31,36 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
     
     var tapGestrue = UITapGestureRecognizer(target: self, action: Selector("handleTapGesture:"))
     view.addGestureRecognizer(tapGestrue)
-    
   }
   
+  
+  func jsonData(jsonData : NSData) -> [String] {
+    var error : NSError?
+    if let quote = NSJSONSerialization.JSONObjectWithData(jsonData, options: nil, error: &error) as? [String] {
+      if let error = error {
+        let alertViewController = UIAlertController(title: "Error", message: "Failed to load the quotes", preferredStyle: .Alert)
+        let okAction = UIAlertAction(title: "OK", style:.Default, handler: nil)
+        alertViewController.addAction(okAction)
+        self.presentViewController(alertViewController, animated: true, completion: nil)
+        exit(0)
+      } else {
+        return quote
+      }
+    }
+    return []
+  }
+  
+
   func handleTapGesture(tapGesture: UITapGestureRecognizer ) {
-    
-    if let quotesToDisplay = quotesToDisplay {
-      quoteLabel.text = quotesToDisplay[++count % quotesToDisplay.count]
+    if let quotes = quotes {
+      quoteLabel.text = quotes[++count % quotes.count]
     }
   }
-  
   
   
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
   }
-  
 }
 
