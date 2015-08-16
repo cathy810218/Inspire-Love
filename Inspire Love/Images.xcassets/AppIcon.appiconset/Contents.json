@@ -1,9 +1,8 @@
 {
   "images" : [
     {
-      "size" : "29x29",
       "idiom" : "iphone",
-      "filename" : "iconiOS5@2x 01-42-54-783.png",
+      "size" : "29x29",
       "scale" : "2x"
     },
     {
@@ -12,61 +11,63 @@
       "scale" : "3x"
     },
     {
-      "idiom" : "iphone",
       "size" : "40x40",
+      "idiom" : "iphone",
+      "filename" : "Icon80x80-1.png",
       "scale" : "2x"
     },
     {
       "size" : "40x40",
       "idiom" : "iphone",
-      "filename" : "iPhoneiconSpotlight@3x.png",
+      "filename" : "Icon120x120.png",
       "scale" : "3x"
     },
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "InspireLoveicon@2x 2.02.39 AM.png",
+      "filename" : "Icon@2x.png",
       "scale" : "2x"
     },
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "InspireLoveicon@3x 2.02.39 AM.png",
+      "filename" : "Icon@3x.png",
       "scale" : "3x"
     },
     {
       "size" : "29x29",
       "idiom" : "ipad",
-      "filename" : "iconOld 01-50-38-182.png",
+      "filename" : "Icon29x29.png",
       "scale" : "1x"
     },
     {
-      "idiom" : "ipad",
       "size" : "29x29",
+      "idiom" : "ipad",
+      "filename" : "Icon58x58.png",
       "scale" : "2x"
     },
     {
       "size" : "40x40",
       "idiom" : "ipad",
-      "filename" : "iconiPadSpotlight 01-50-38-045.png",
+      "filename" : "Icon40x40.png",
       "scale" : "1x"
     },
     {
       "size" : "40x40",
       "idiom" : "ipad",
-      "filename" : "iPhoneiconSpotlight@2x 01-43-00-570.png",
+      "filename" : "Icon80x80.png",
       "scale" : "2x"
     },
     {
       "size" : "76x76",
       "idiom" : "ipad",
-      "filename" : "iconiPad 01-50-38-081.png",
+      "filename" : "IconiPadMini.png",
       "scale" : "1x"
     },
     {
       "size" : "76x76",
       "idiom" : "ipad",
-      "filename" : "iconiPad@2x 01-50-38-121.png",
+      "filename" : "IconiPadMini@2x.png",
       "scale" : "2x"
     },
     {
@@ -91,14 +92,12 @@
     {
       "size" : "29x29",
       "idiom" : "watch",
-      "filename" : "iconOld@2x 01-50-38-293.png",
       "role" : "companionSettings",
       "scale" : "2x"
     },
     {
       "size" : "29x29",
       "idiom" : "watch",
-      "filename" : "iconiOS5@3x 01-50-38-208.png",
       "role" : "companionSettings",
       "scale" : "3x"
     },
@@ -129,13 +128,6 @@
       "scale" : "2x",
       "role" : "quickLook",
       "subtype" : "42mm"
-    },
-    {
-      "size" : "40x40",
-      "idiom" : "ipad",
-      "filename" : "iconiPadSpotlight@2x 01-43-02-150.png",
-      "unassigned" : true,
-      "scale" : "2x"
     }
   ],
   "info" : {
