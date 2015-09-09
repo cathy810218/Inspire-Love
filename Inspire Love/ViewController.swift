@@ -13,11 +13,11 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
   
   var quotes: [String]?
   var index = 0
-  var iPadQuoteFontSize : CGFloat = 30
+  let iPadQuoteFontSize : CGFloat = 30
+  
+  @IBOutlet weak var backgroundImageView: UIImageView!
   @IBOutlet weak var quoteLabel: UILabel!
   
-  @IBOutlet weak var optionButton: UIBarButtonItem!
-
   @IBAction func optionButtonAction(sender: UIBarButtonItem) {
     selectionAlert.modalPresentationStyle = UIModalPresentationStyle.Popover
     if let popover = selectionAlert.popoverPresentationController {
@@ -34,12 +34,19 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    let cancelAtion = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel) { (alert) -> Void in
+    if UIDevice.currentDevice().userInterfaceIdiom == .Pad {
+      backgroundImageView.image = UIImage(named: "iPadBackgroundImage.jpg");
+    } else {
+      // assume its initially portrait
+      backgroundImageView.image = UIImage(named: "backgroundPortrait.jpg");
     }
     
-      let aboutUsAction = UIAlertAction(title: "About Us", style: UIAlertActionStyle.Default) { (alert) -> Void in
+    
+    let cancelAtion = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel) { (alert) -> Void in
+    }
+    let aboutUsAction = UIAlertAction(title: "About Us", style: UIAlertActionStyle.Default) { (alert) -> Void in
       // segue
-        self.performSegueWithIdentifier("AboutUs", sender: self)
+      self.performSegueWithIdentifier("AboutUs", sender: self)
     }
     
     let shareAction = UIAlertAction(title: "Share Quote", style: UIAlertActionStyle.Default) { (alert) -> Void in
@@ -79,6 +86,8 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
       }
     }
     
+    // send quotes to apple watch in side view did load
+    
     var tapGestrue = UITapGestureRecognizer(target: self, action: Selector("handleTapGesture:"))
     view.addGestureRecognizer(tapGestrue)
   }
@@ -97,16 +106,28 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
         return quote
       }
     }
+    
     return []
   }
   
-
+  
   func handleTapGesture(tapGesture: UITapGestureRecognizer ) {
     if let quotes = quotes {
       quoteLabel.text = quotes[++index % quotes.count]
     }
   }
-  
+  override func didRotateFromInterfaceOrientation(fromInterfaceOrientation: UIInterfaceOrientation) {
+    let app = UIApplication.sharedApplication()
+    if UIDevice.currentDevice().userInterfaceIdiom == .Phone {
+      
+      if (app.statusBarOrientation.isLandscape) {
+        backgroundImageView.image = UIImage(named: "backgroundLandscape.jpg");
+      }
+      else {
+        backgroundImageView.image = UIImage(named: "backgroundPortrait.jpg");
+      }
+    }
+  }
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
     if segue.identifier == "AboutUs" {
       if let aboutUs = segue.destinationViewController as? AboutUsViewController {

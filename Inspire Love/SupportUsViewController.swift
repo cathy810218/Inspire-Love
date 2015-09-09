@@ -17,7 +17,6 @@ class SupportUsViewController: UIViewController {
       supportLabel.font = supportLabel.font.fontWithSize(iPadFontSize)
     }
   }
-  
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.

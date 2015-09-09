@@ -9,16 +9,13 @@
 import UIKit
 
 class AboutUsViewController: UIViewController {
-  
-  //  var size = CGSize(width: <#CGFloat#>, height: <#CGFloat#>)
-  var iPadFontSize : CGFloat = 22
-  
+  var iPadFontSize : CGFloat = 30
   @IBOutlet weak var aboutUsTextView: UITextView!
   override func viewDidLoad() {
-//    scroller.contentSize.height = 500
     super.viewDidLoad()
+
     if UIDevice.currentDevice().userInterfaceIdiom == .Pad {
-      aboutUsTextView.font = aboutUsTextView.font.fontWithSize(iPadFontSize)
+      aboutUsTextView.font = UIFont(name: aboutUsTextView.font.fontName, size: iPadFontSize)
     }
   }
   

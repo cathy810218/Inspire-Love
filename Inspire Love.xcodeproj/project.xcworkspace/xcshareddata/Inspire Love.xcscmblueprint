@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "4104595FE1D843ED3382481472D429C417798A8F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "4104595FE1D843ED3382481472D429C417798A8F" : 0,
+    "676FA7DE3FDB5D15A274DDB5402BD35DE71E07AD" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "67E49C28-800C-4E85-A370-8D491DD74C7D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "4104595FE1D843ED3382481472D429C417798A8F" : "Inspire%20Love",
+    "676FA7DE3FDB5D15A274DDB5402BD35DE71E07AD" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Inspire Love",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Inspire Love.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:cathy810218\/TheInspireLoveApp.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4104595FE1D843ED3382481472D429C417798A8F"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:cathy810218\/TheInspireLoveApp.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "676FA7DE3FDB5D15A274DDB5402BD35DE71E07AD"
+    }
+  ]
+}
