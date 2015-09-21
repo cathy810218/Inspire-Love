@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		6B0E9EDF1B70B1AF006DFCFF /* TestingArray.json in Resources */ = {isa = PBXBuildFile; fileRef = 6B0E9EDE1B70B1AF006DFCFF /* TestingArray.json */; };
-		6B3E75711B85CDD3002F0EE4 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3E75701B85CDD3002F0EE4 /* WebViewController.swift */; };
 		6B44FE251B99497C000983CF /* backgroundPortrait.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6B44FE241B99497C000983CF /* backgroundPortrait.jpg */; };
 		6B44FE271B99499E000983CF /* backgroundLandscape.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6B44FE261B99499E000983CF /* backgroundLandscape.jpg */; };
 		6B44FE291B994A42000983CF /* iPadBackgroundImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6B44FE281B994A42000983CF /* iPadBackgroundImage.jpg */; };
@@ -39,7 +38,6 @@
 
 /* Begin PBXFileReference section */
 		6B0E9EDE1B70B1AF006DFCFF /* TestingArray.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TestingArray.json; sourceTree = "<group>"; };
-		6B3E75701B85CDD3002F0EE4 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		6B44FE241B99497C000983CF /* backgroundPortrait.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = backgroundPortrait.jpg; path = ../../../../../Downloads/backgroundPortrait.jpg; sourceTree = "<group>"; };
 		6B44FE261B99499E000983CF /* backgroundLandscape.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = backgroundLandscape.jpg; path = ../../../../../Downloads/backgroundLandscape.jpg; sourceTree = "<group>"; };
 		6B44FE281B994A42000983CF /* iPadBackgroundImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = iPadBackgroundImage.jpg; path = ../../../../../Downloads/iPadBackgroundImage.jpg; sourceTree = "<group>"; };
@@ -107,7 +105,6 @@
 				6B6C88301B69B12C00F88EDB /* ViewController.swift */,
 				6BDC90721B807B54008EDF5E /* AboutUsViewController.swift */,
 				6BDC90741B807D89008EDF5E /* SupportUsViewController.swift */,
-				6B3E75701B85CDD3002F0EE4 /* WebViewController.swift */,
 				6B6C882C1B69B12C00F88EDB /* Supporting Files */,
 			);
 			path = "Inspire Love";
@@ -262,7 +259,6 @@
 				6BDC90751B807D89008EDF5E /* SupportUsViewController.swift in Sources */,
 				6B6C88311B69B12C00F88EDB /* ViewController.swift in Sources */,
 				6BDC90731B807B54008EDF5E /* AboutUsViewController.swift in Sources */,
-				6B3E75711B85CDD3002F0EE4 /* WebViewController.swift in Sources */,
 				6B6C882F1B69B12C00F88EDB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

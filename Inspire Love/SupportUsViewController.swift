@@ -10,6 +10,21 @@ import UIKit
 
 class SupportUsViewController: UIViewController {
   var iPadFontSize : CGFloat = 25
+  
+  @IBAction func donationButtonPressed(sender: UIButton) {
+    
+    var alert = UIAlertController(title: "Attention", message: "By clicking OK, you agree to exit the app and will be directed to the Paypal donation page.", preferredStyle: UIAlertControllerStyle.Alert)
+    alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: { (alertAction) -> Void in
+      var url : NSURL!
+      url = NSURL(string: "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=283RGZX2GVAD8")
+      UIApplication.sharedApplication().openURL(url)
+    }));
+    alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel, handler: nil))
+
+    
+    self.presentViewController(alert, animated: true, completion: nil)
+
+  }
   @IBOutlet weak var supportLabel: UILabel!
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -21,16 +36,5 @@ class SupportUsViewController: UIViewController {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
   }
-  
-  
-  /*
-  // MARK: - Navigation
-  
-  // In a storyboard-based application, you will often want to do a little preparation before navigation
-  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-  // Get the new view controller using segue.destinationViewController.
-  // Pass the selected object to the new view controller.
-  }
-  */
   
 }

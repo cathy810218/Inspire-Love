@@ -207,7 +207,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="9ff-9K-VnP" kind="show" id="0bX-h1-con"/>
+                                    <action selector="donationButtonPressed:" destination="yei-42-6am" eventType="touchUpInside" id="4XM-KW-VGj"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -226,37 +226,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NII-KO-G2u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3189" y="-711"/>
-        </scene>
-        <!--Web View Controller-->
-        <scene sceneID="2g9-s3-pdP">
-            <objects>
-                <viewController id="9ff-9K-VnP" customClass="WebViewController" customModule="Inspire_Love" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="vMw-k9-Lc8"/>
-                        <viewControllerLayoutGuide type="bottom" id="rXd-db-OZI"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="daX-RZ-TaS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="cKY-5f-k7s">
-                                <rect key="frame" x="282" y="282" width="37" height="37"/>
-                                <color key="color" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </activityIndicatorView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="centerX" secondItem="cKY-5f-k7s" secondAttribute="centerX" id="mVJ-Gz-7IR"/>
-                            <constraint firstAttribute="centerY" secondItem="cKY-5f-k7s" secondAttribute="centerY" id="n7A-hB-GSA"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="activityIndicator" destination="cKY-5f-k7s" id="zMt-E7-Kzv"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="e0B-fS-3SZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3905" y="-1172"/>
         </scene>
         <!--About Us View Controller-->
         <scene sceneID="OPY-hw-vj7">
