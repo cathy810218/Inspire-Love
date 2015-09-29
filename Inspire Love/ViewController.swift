@@ -34,12 +34,12 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    if UIDevice.currentDevice().userInterfaceIdiom == .Pad {
-      backgroundImageView.image = UIImage(named: "iPadBackgroundImage.jpg");
-    } else {
-      // assume its initially portrait
-      backgroundImageView.image = UIImage(named: "backgroundPortrait.jpg");
-    }
+//    if UIDevice.currentDevice().userInterfaceIdiom == .Pad {
+//      backgroundImageView.image = UIImage(named: "iPadBackgroundImage.jpg");
+//    } else {
+//      // assume its initially portrait
+//      backgroundImageView.image = UIImage(named: "iPadBackgroundImage.jpg");
+//    }
     
     
     let cancelAtion = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel) { (alert) -> Void in
@@ -51,7 +51,7 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
     
     let shareAction = UIAlertAction(title: "Share Quote", style: UIAlertActionStyle.Default) { (alert) -> Void in
       // social sharing
-      var quoteToShare : String = self.quoteLabel.text!
+      let quoteToShare : String = self.quoteLabel.text!
       let activityViewController = UIActivityViewController(activityItems: [quoteToShare + "\nBy Harold B. Becker"], applicationActivities: nil)
       self.presentViewController(activityViewController, animated: true, completion: nil)
       if UIDevice.currentDevice().userInterfaceIdiom == .Pad {
@@ -80,69 +80,66 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
       if let data = NSData(contentsOfFile: filepath) {
         quotes = jsonData(data)
         if let quotes = quotes {
-          var eachQuote = quotes[index] // to display the first quote
+          let eachQuote = quotes[index] // to display the first quote
           quoteLabel.text = eachQuote
         }
       }
     }
     
     // send quotes to apple watch in side view did load
-    
-    var tapGestrue = UITapGestureRecognizer(target: self, action: Selector("handleTapGesture:"))
+    let tapGestrue = UITapGestureRecognizer(target: self, action: Selector("handleTapGesture:"))
     view.addGestureRecognizer(tapGestrue)
   }
   
-  
   func jsonData(jsonData : NSData) -> [String] {
-    var error : NSError?
-    if let quote = NSJSONSerialization.JSONObjectWithData(jsonData, options: nil, error: &error) as? [String] {
-      if let error = error {
-        let alertViewController = UIAlertController(title: "Error", message: "Failed to load the quotes", preferredStyle: .Alert)
-        let okAction = UIAlertAction(title: "OK", style:.Default, handler: nil)
-        alertViewController.addAction(okAction)
-        self.presentViewController(alertViewController, animated: true, completion: nil)
-        exit(0)
-      } else {
-        return quote
-      }
+    do {
+      // Try parsing some valid JSON
+      let quote = try NSJSONSerialization.JSONObjectWithData(jsonData, options: NSJSONReadingOptions.AllowFragments)
+//      print(quote)
+      return quote as! [String]
     }
-    
-    return []
+    catch {
+      // Catch fires here, with an NSErrro being thrown from the JSONObjectWithData method
+      let alertViewController = UIAlertController(title: "Error", message: "Failed to load the quotes", preferredStyle: .Alert)
+      let okAction = UIAlertAction(title: "OK", style:.Default, handler: nil)
+      alertViewController.addAction(okAction)
+      self.presentViewController(alertViewController, animated: true, completion: nil)
+      exit(0)
+    }
   }
-  
   
   func handleTapGesture(tapGesture: UITapGestureRecognizer ) {
     if let quotes = quotes {
       quoteLabel.text = quotes[++index % quotes.count]
     }
   }
-  override func didRotateFromInterfaceOrientation(fromInterfaceOrientation: UIInterfaceOrientation) {
-    let app = UIApplication.sharedApplication()
-    if UIDevice.currentDevice().userInterfaceIdiom == .Phone {
-      
-      if (app.statusBarOrientation.isLandscape) {
-        backgroundImageView.image = UIImage(named: "backgroundLandscape.jpg");
-      }
-      else {
-        backgroundImageView.image = UIImage(named: "backgroundPortrait.jpg");
-      }
-    }
-  }
+//  override func didRotateFromInterfaceOrientation(fromInterfaceOrientation: UIInterfaceOrientation) {
+//    let app = UIApplication.sharedApplication()
+//    if UIDevice.currentDevice().userInterfaceIdiom == .Phone {
+//      
+//      if (app.statusBarOrientation.isLandscape) {
+//        backgroundImageView.image = UIImage(named: "backgroundLandscape.jpg");
+//      }
+//      else {
+//        backgroundImageView.image = UIImage(named: "backgroundPortrait.jpg");
+//      }
+//    }
+//  }
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
     if segue.identifier == "AboutUs" {
-      if let aboutUs = segue.destinationViewController as? AboutUsViewController {
+      if let _ = segue.destinationViewController as? AboutUsViewController {
         
       }
     }
     if segue.identifier == "SupportUs" {
-      if let supportUs = segue.destinationViewController as? SupportUsViewController {
+      if let _ = segue.destinationViewController as? SupportUsViewController {
         
       }
     }
   }
-  override func supportedInterfaceOrientations() -> Int {
-    return Int(UIInterfaceOrientationMask.Portrait.rawValue)
-  }
+//  func supportedInterfaceOrientations() -> Int {
+//    return Int(UIInterfaceOrientationMask.Portrait.rawValue)
+//  }
   
   
   override func shouldAutorotate() -> Bool {

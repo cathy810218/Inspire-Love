@@ -15,7 +15,7 @@ class AboutUsViewController: UIViewController {
     super.viewDidLoad()
 
     if UIDevice.currentDevice().userInterfaceIdiom == .Pad {
-      aboutUsTextView.font = UIFont(name: aboutUsTextView.font.fontName, size: iPadFontSize)
+      aboutUsTextView.font = UIFont(name: aboutUsTextView.font!.fontName, size: iPadFontSize)
     }
   }
   

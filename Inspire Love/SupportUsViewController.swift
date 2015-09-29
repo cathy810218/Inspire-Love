@@ -13,7 +13,7 @@ class SupportUsViewController: UIViewController {
   
   @IBAction func donationButtonPressed(sender: UIButton) {
     
-    var alert = UIAlertController(title: "Attention", message: "By clicking OK, you agree to exit the app and will be directed to the Paypal donation page.", preferredStyle: UIAlertControllerStyle.Alert)
+    let alert = UIAlertController(title: "Attention", message: "By clicking OK, you agree to exit the app and will be directed to the Paypal donation page.", preferredStyle: UIAlertControllerStyle.Alert)
     alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: { (alertAction) -> Void in
       var url : NSURL!
       url = NSURL(string: "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=283RGZX2GVAD8")
