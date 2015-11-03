@@ -7,23 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6B0E9EDF1B70B1AF006DFCFF /* TestingArray.json in Resources */ = {isa = PBXBuildFile; fileRef = 6B0E9EDE1B70B1AF006DFCFF /* TestingArray.json */; };
-		6B44FE251B99497C000983CF /* backgroundPortrait.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6B44FE241B99497C000983CF /* backgroundPortrait.jpg */; };
-		6B44FE271B99499E000983CF /* backgroundLandscape.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6B44FE261B99499E000983CF /* backgroundLandscape.jpg */; };
-		6B44FE291B994A42000983CF /* iPadBackgroundImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6B44FE281B994A42000983CF /* iPadBackgroundImage.jpg */; };
+		6B1B4E631BE93CED00E1C48A /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B1B4E601BE93CED00E1C48A /* FBSDKCoreKit.framework */; };
+		6B1B4E641BE93CED00E1C48A /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B1B4E611BE93CED00E1C48A /* FBSDKLoginKit.framework */; };
+		6B1B4E651BE93CED00E1C48A /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B1B4E621BE93CED00E1C48A /* FBSDKShareKit.framework */; };
 		6B6C882F1B69B12C00F88EDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6C882E1B69B12C00F88EDB /* AppDelegate.swift */; };
 		6B6C88311B69B12C00F88EDB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6C88301B69B12C00F88EDB /* ViewController.swift */; };
 		6B6C88341B69B12C00F88EDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B6C88321B69B12C00F88EDB /* Main.storyboard */; };
 		6B6C88361B69B12C00F88EDB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B6C88351B69B12C00F88EDB /* Images.xcassets */; };
 		6B6C88391B69B12C00F88EDB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B6C88371B69B12C00F88EDB /* LaunchScreen.xib */; };
 		6B6C88451B69B12C00F88EDB /* Inspire_LoveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6C88441B69B12C00F88EDB /* Inspire_LoveTests.swift */; };
-		6B6C88551B69C17300F88EDB /* NavBarIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B6C88541B69C17300F88EDB /* NavBarIcon.png */; };
 		6BC6D0D11B7028D0009E86C4 /* quotes.json in Resources */ = {isa = PBXBuildFile; fileRef = 6BC6D0D01B7028D0009E86C4 /* quotes.json */; };
 		6BDC90711B806BC4008EDF5E /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BDC90701B806BC4008EDF5E /* Social.framework */; };
 		6BDC90731B807B54008EDF5E /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDC90721B807B54008EDF5E /* AboutUsViewController.swift */; };
 		6BDC90751B807D89008EDF5E /* SupportUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDC90741B807D89008EDF5E /* SupportUsViewController.swift */; };
-		6BDC907B1B810844008EDF5E /* donate.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BDC907A1B810844008EDF5E /* donate.png */; };
-		6BDC907F1B814926008EDF5E /* earth-circle-150.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BDC907E1B814926008EDF5E /* earth-circle-150.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,10 +33,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6B0E9EDE1B70B1AF006DFCFF /* TestingArray.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TestingArray.json; sourceTree = "<group>"; };
-		6B44FE241B99497C000983CF /* backgroundPortrait.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = backgroundPortrait.jpg; path = ../../../../../Downloads/backgroundPortrait.jpg; sourceTree = "<group>"; };
-		6B44FE261B99499E000983CF /* backgroundLandscape.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = backgroundLandscape.jpg; path = ../../../../../Downloads/backgroundLandscape.jpg; sourceTree = "<group>"; };
-		6B44FE281B994A42000983CF /* iPadBackgroundImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = iPadBackgroundImage.jpg; path = ../../../../../Downloads/iPadBackgroundImage.jpg; sourceTree = "<group>"; };
+		6B1B4E601BE93CED00E1C48A /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		6B1B4E611BE93CED00E1C48A /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		6B1B4E621BE93CED00E1C48A /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		6B1B4E661BE93DEB00E1C48A /* Bridge-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridge-Header.h"; sourceTree = "<group>"; };
 		6B6C88291B69B12C00F88EDB /* Inspire Love.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Inspire Love.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B6C882D1B69B12C00F88EDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B6C882E1B69B12C00F88EDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -51,13 +47,10 @@
 		6B6C883E1B69B12C00F88EDB /* Inspire LoveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Inspire LoveTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B6C88431B69B12C00F88EDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B6C88441B69B12C00F88EDB /* Inspire_LoveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inspire_LoveTests.swift; sourceTree = "<group>"; };
-		6B6C88541B69C17300F88EDB /* NavBarIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NavBarIcon.png; path = "../../../../../Downloads/fwdvolunteermatchinspireloveapp-2/NavBarIcon.png"; sourceTree = "<group>"; };
 		6BC6D0D01B7028D0009E86C4 /* quotes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = quotes.json; sourceTree = "<group>"; };
 		6BDC90701B806BC4008EDF5E /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		6BDC90721B807B54008EDF5E /* AboutUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
 		6BDC90741B807D89008EDF5E /* SupportUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupportUsViewController.swift; sourceTree = "<group>"; };
-		6BDC907A1B810844008EDF5E /* donate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = donate.png; sourceTree = "<group>"; };
-		6BDC907E1B814926008EDF5E /* earth-circle-150.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "earth-circle-150.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +58,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B1B4E651BE93CED00E1C48A /* FBSDKShareKit.framework in Frameworks */,
 				6BDC90711B806BC4008EDF5E /* Social.framework in Frameworks */,
+				6B1B4E631BE93CED00E1C48A /* FBSDKCoreKit.framework in Frameworks */,
+				6B1B4E641BE93CED00E1C48A /* FBSDKLoginKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +78,9 @@
 		6B6C88201B69B12C00F88EDB = {
 			isa = PBXGroup;
 			children = (
+				6B1B4E601BE93CED00E1C48A /* FBSDKCoreKit.framework */,
+				6B1B4E611BE93CED00E1C48A /* FBSDKLoginKit.framework */,
+				6B1B4E621BE93CED00E1C48A /* FBSDKShareKit.framework */,
 				6BDC90701B806BC4008EDF5E /* Social.framework */,
 				6B6C882B1B69B12C00F88EDB /* Inspire Love */,
 				6B6C88411B69B12C00F88EDB /* Inspire LoveTests */,
@@ -101,7 +100,6 @@
 		6B6C882B1B69B12C00F88EDB /* Inspire Love */ = {
 			isa = PBXGroup;
 			children = (
-				6B6C88321B69B12C00F88EDB /* Main.storyboard */,
 				6B6C88301B69B12C00F88EDB /* ViewController.swift */,
 				6BDC90721B807B54008EDF5E /* AboutUsViewController.swift */,
 				6BDC90741B807D89008EDF5E /* SupportUsViewController.swift */,
@@ -113,17 +111,12 @@
 		6B6C882C1B69B12C00F88EDB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				6B44FE241B99497C000983CF /* backgroundPortrait.jpg */,
+				6B6C88321B69B12C00F88EDB /* Main.storyboard */,
 				6B6C88371B69B12C00F88EDB /* LaunchScreen.xib */,
-				6BDC907E1B814926008EDF5E /* earth-circle-150.png */,
-				6B44FE261B99499E000983CF /* backgroundLandscape.jpg */,
-				6B44FE281B994A42000983CF /* iPadBackgroundImage.jpg */,
-				6BDC907A1B810844008EDF5E /* donate.png */,
 				6BC6D0D01B7028D0009E86C4 /* quotes.json */,
-				6B0E9EDE1B70B1AF006DFCFF /* TestingArray.json */,
-				6B6C88541B69C17300F88EDB /* NavBarIcon.png */,
 				6B6C88351B69B12C00F88EDB /* Images.xcassets */,
 				6B6C882E1B69B12C00F88EDB /* AppDelegate.swift */,
+				6B1B4E661BE93DEB00E1C48A /* Bridge-Header.h */,
 				6B6C882D1B69B12C00F88EDB /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -228,16 +221,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6BDC907B1B810844008EDF5E /* donate.png in Resources */,
-				6B0E9EDF1B70B1AF006DFCFF /* TestingArray.json in Resources */,
 				6B6C88341B69B12C00F88EDB /* Main.storyboard in Resources */,
-				6B44FE271B99499E000983CF /* backgroundLandscape.jpg in Resources */,
 				6BC6D0D11B7028D0009E86C4 /* quotes.json in Resources */,
-				6B44FE251B99497C000983CF /* backgroundPortrait.jpg in Resources */,
-				6B44FE291B994A42000983CF /* iPadBackgroundImage.jpg in Resources */,
 				6B6C88391B69B12C00F88EDB /* LaunchScreen.xib in Resources */,
-				6BDC907F1B814926008EDF5E /* earth-circle-150.png in Resources */,
-				6B6C88551B69C17300F88EDB /* NavBarIcon.png in Resources */,
 				6B6C88361B69B12C00F88EDB /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -391,12 +377,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Inspire Love/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.thelovefoundation.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Inspire Love/Bridge-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -407,12 +398,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Inspire Love/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.thelovefoundation.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Inspire Love/Bridge-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Release;

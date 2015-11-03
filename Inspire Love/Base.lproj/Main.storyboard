@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vJk-ae-SJT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vJk-ae-SJT">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="iPadBackgroundImage.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Zr0-3f-mHz">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Zr0-3f-mHz">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                                 <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
@@ -118,7 +118,7 @@
                                             <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         </variation>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NavBarIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="6m2-Ga-jNe">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heartIcon" translatesAutoresizingMaskIntoConstraints="NO" id="6m2-Ga-jNe">
                                         <rect key="frame" x="1" y="6" width="31" height="31"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="31" id="CXo-Ge-f9F"/>
@@ -204,7 +204,7 @@
                                     <constraint firstAttribute="height" constant="56" id="s8D-FI-ghu"/>
                                     <constraint firstAttribute="width" constant="244" id="yeB-gT-brG"/>
                                 </constraints>
-                                <state key="normal" image="donate.png">
+                                <state key="normal" image="donate">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -240,7 +240,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="earth-circle-150.png" translatesAutoresizingMaskIntoConstraints="NO" id="nOG-Kh-niw">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="earth-circle-150" translatesAutoresizingMaskIntoConstraints="NO" id="nOG-Kh-niw">
                                 <rect key="frame" x="210" y="72" width="180" height="180"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="180" id="q31-py-BFm"/>
@@ -346,9 +346,9 @@ TheLoveFoundation.com</string>
         </scene>
     </scenes>
     <resources>
-        <image name="NavBarIcon.png" width="80" height="80"/>
-        <image name="donate.png" width="503" height="116"/>
-        <image name="earth-circle-150.png" width="150" height="150"/>
-        <image name="iPadBackgroundImage.jpg" width="2048" height="1448"/>
+        <image name="background" width="2995" height="2118"/>
+        <image name="donate" width="503" height="116"/>
+        <image name="earth-circle-150" width="150" height="150"/>
+        <image name="heartIcon" width="512" height="512"/>
     </resources>
 </document>

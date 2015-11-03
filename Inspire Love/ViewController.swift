@@ -9,6 +9,7 @@
 import UIKit
 import Social
 
+
 class ViewController: UIViewController, UIGestureRecognizerDelegate {
   
   var quotes: [String]?
@@ -52,16 +53,42 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
     let shareAction = UIAlertAction(title: "Share Quote", style: UIAlertActionStyle.Default) { (alert) -> Void in
       // social sharing
       let quoteToShare : String = self.quoteLabel.text!
-      let activityViewController = UIActivityViewController(activityItems: [quoteToShare + "\nBy Harold B. Becker"], applicationActivities: nil)
-      self.presentViewController(activityViewController, animated: true, completion: nil)
-      if UIDevice.currentDevice().userInterfaceIdiom == .Pad {
-        if activityViewController.respondsToSelector("popoverPresentationController") {
-          let presentationController = activityViewController.popoverPresentationController
-          presentationController?.permittedArrowDirections = UIPopoverArrowDirection.Up
-          presentationController?.sourceRect = CGRectMake(self.view.frame.maxX, self.view.bounds.origin.y, 0, 0)
-          presentationController?.sourceView = self.view
+      let shareObjects : NSArray = [quoteToShare + "\nBy Harold W. Becker" + "\n\nhttps://itunes.apple.com/us/app/inspire-love/id1038260913?ls=1&mt=8"]
+     
+      let gpBoard = UIPasteboard.generalPasteboard()
+      gpBoard.strings = shareObjects as? [String];
+      
+//      let fbShareLink : FBSDKShareLinkContent = FBSDKShareLinkContent()
+//      fbShareLink.contentURL = NSURL(string: "https://itunes.apple.com/us/app/inspire-love/id1038260913?ls=1&mt=8")
+
+      
+      if SLComposeViewController.isAvailableForServiceType(SLServiceTypeFacebook) {
+        
+        let activityViewController = UIActivityViewController(activityItems: gpBoard.strings!, applicationActivities: nil)
+        self.presentViewController(activityViewController, animated: true, completion: nil)
+        if UIDevice.currentDevice().userInterfaceIdiom == .Pad {
+          if activityViewController.respondsToSelector("popoverPresentationController") {
+            let presentationController = activityViewController.popoverPresentationController
+            presentationController?.permittedArrowDirections = UIPopoverArrowDirection.Up
+            presentationController?.sourceRect = CGRectMake(self.view.frame.maxX, self.view.bounds.origin.y, 0, 0)
+            presentationController?.sourceView = self.view
+          }
         }
+
+      } else {
+        let activityViewController = UIActivityViewController(activityItems: shareObjects as [AnyObject] , applicationActivities: nil)
+        self.presentViewController(activityViewController, animated: true, completion: nil)
+        if UIDevice.currentDevice().userInterfaceIdiom == .Pad {
+          if activityViewController.respondsToSelector("popoverPresentationController") {
+            let presentationController = activityViewController.popoverPresentationController
+            presentationController?.permittedArrowDirections = UIPopoverArrowDirection.Up
+            presentationController?.sourceRect = CGRectMake(self.view.frame.maxX, self.view.bounds.origin.y, 0, 0)
+            presentationController?.sourceView = self.view
+          }
+        }
+
       }
+      
     }
     
     let supportAction = UIAlertAction(title: "Support Us", style: UIAlertActionStyle.Default) { (alert) -> Void in
@@ -100,7 +127,7 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
     }
     catch {
       // Catch fires here, with an NSErrro being thrown from the JSONObjectWithData method
-      let alertViewController = UIAlertController(title: "Error", message: "Failed to load the quotes", preferredStyle: .Alert)
+      let alertViewController = UIAlertController(title: "Error", message: "Failed to load the quote", preferredStyle: .Alert)
       let okAction = UIAlertAction(title: "OK", style:.Default, handler: nil)
       alertViewController.addAction(okAction)
       self.presentViewController(alertViewController, animated: true, completion: nil)
@@ -137,11 +164,6 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
       }
     }
   }
-//  func supportedInterfaceOrientations() -> Int {
-//    return Int(UIInterfaceOrientationMask.Portrait.rawValue)
-//  }
-  
-  
   override func shouldAutorotate() -> Bool {
     return true
   }
