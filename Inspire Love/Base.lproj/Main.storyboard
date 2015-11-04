@@ -248,17 +248,17 @@
                                 </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.94999999999999996" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="884-nQ-ofA">
-                                <rect key="frame" x="50" y="260" width="501" height="277"/>
+                                <rect key="frame" x="40" y="260" width="520" height="277"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="525" id="2mC-Db-Zuq"/>
                                 </constraints>
-                                <string key="text">The Love Foundation is a global nonprofit organization with the mission of inspiring people to love unconditionally. Our vision is to assist people by building a practical foundation and understanding of unconditional love within individuals and society as a whole.
+                                <mutableString key="text">The Love Foundation is a global nonprofit organization with the mission of inspiring people to love unconditionally. Our vision is to assist people by building a practical foundation and understanding of unconditional love within individuals and society as a whole.
 
 Our programs further the awareness and application of unconditional love through education, research, and charity. Our intention is to explore a variety of creative activities and presentations that enhance unity and self-conscious expression while promoting love and respect to all aspects of life. 
 
 Quotes provided by: Harold W. Becker
 
-TheLoveFoundation.com</string>
+TheLoveFoundation.com</mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <dataDetectorType key="dataDetectorTypes" link="YES"/>
@@ -283,12 +283,12 @@ TheLoveFoundation.com</string>
                             <constraint firstItem="884-nQ-ofA" firstAttribute="centerX" secondItem="nOG-Kh-niw" secondAttribute="centerX" id="7tm-yg-Y8P"/>
                             <constraint firstItem="hkN-Ib-Og9" firstAttribute="top" secondItem="884-nQ-ofA" secondAttribute="bottom" constant="63" id="B7q-Ar-rSe"/>
                             <constraint firstItem="884-nQ-ofA" firstAttribute="top" secondItem="nOG-Kh-niw" secondAttribute="bottom" constant="8" id="F1Q-sh-LUn"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="884-nQ-ofA" secondAttribute="trailing" constant="29" id="LZX-vy-nHQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="884-nQ-ofA" secondAttribute="trailing" constant="20" id="LZX-vy-nHQ"/>
                             <constraint firstAttribute="centerX" secondItem="nOG-Kh-niw" secondAttribute="centerX" id="QAc-95-n7T"/>
                             <constraint firstItem="nOG-Kh-niw" firstAttribute="top" secondItem="bH0-nH-xbL" secondAttribute="bottom" constant="42" id="U7D-XJ-Qvo"/>
                             <constraint firstItem="hkN-Ib-Og9" firstAttribute="top" secondItem="884-nQ-ofA" secondAttribute="bottom" constant="63" id="U82-8b-PsG"/>
                             <constraint firstItem="884-nQ-ofA" firstAttribute="top" secondItem="nOG-Kh-niw" secondAttribute="bottom" constant="15" id="eJI-vb-T2M"/>
-                            <constraint firstItem="884-nQ-ofA" firstAttribute="leading" secondItem="FYu-9D-7H6" secondAttribute="leadingMargin" constant="30" id="hpT-1M-zsV"/>
+                            <constraint firstItem="884-nQ-ofA" firstAttribute="leading" secondItem="FYu-9D-7H6" secondAttribute="leadingMargin" constant="20" id="hpT-1M-zsV"/>
                             <constraint firstItem="nOG-Kh-niw" firstAttribute="top" secondItem="bH0-nH-xbL" secondAttribute="bottom" constant="8" symbolic="YES" id="oH1-nL-DRZ"/>
                         </constraints>
                         <variation key="default">

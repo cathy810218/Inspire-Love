@@ -7,9 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6B1B4E631BE93CED00E1C48A /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B1B4E601BE93CED00E1C48A /* FBSDKCoreKit.framework */; };
-		6B1B4E641BE93CED00E1C48A /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B1B4E611BE93CED00E1C48A /* FBSDKLoginKit.framework */; };
-		6B1B4E651BE93CED00E1C48A /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B1B4E621BE93CED00E1C48A /* FBSDKShareKit.framework */; };
+		6B1B4EBE1BE9913500E1C48A /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B1B4EBC1BE9913500E1C48A /* Interface.storyboard */; };
+		6B1B4EC01BE9913500E1C48A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B1B4EBF1BE9913500E1C48A /* Assets.xcassets */; };
+		6B1B4EC71BE9913500E1C48A /* Inspire Love Watch App Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6B1B4EC61BE9913500E1C48A /* Inspire Love Watch App Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6B1B4ECC1BE9913500E1C48A /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1B4ECB1BE9913500E1C48A /* InterfaceController.swift */; };
+		6B1B4ECE1BE9913500E1C48A /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1B4ECD1BE9913500E1C48A /* ExtensionDelegate.swift */; };
+		6B1B4ED01BE9913500E1C48A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B1B4ECF1BE9913500E1C48A /* Assets.xcassets */; };
+		6B1B4ED41BE9913500E1C48A /* Inspire Love Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 6B1B4EBA1BE9913500E1C48A /* Inspire Love Watch App.app */; };
+		6B1B4EDC1BE9931000E1C48A /* quotes.json in Resources */ = {isa = PBXBuildFile; fileRef = 6BC6D0D01B7028D0009E86C4 /* quotes.json */; };
+		6B1B4EDD1BE9931200E1C48A /* quotes.json in Resources */ = {isa = PBXBuildFile; fileRef = 6BC6D0D01B7028D0009E86C4 /* quotes.json */; };
+		6B1B4EDF1BE99A9700E1C48A /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B1B4EDE1BE99A9700E1C48A /* background.png */; };
+		6B1B4EE11BE9A32D00E1C48A /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B1B4EE01BE9A32D00E1C48A /* icon.png */; };
 		6B6C882F1B69B12C00F88EDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6C882E1B69B12C00F88EDB /* AppDelegate.swift */; };
 		6B6C88311B69B12C00F88EDB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6C88301B69B12C00F88EDB /* ViewController.swift */; };
 		6B6C88341B69B12C00F88EDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B6C88321B69B12C00F88EDB /* Main.storyboard */; };
@@ -23,6 +31,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		6B1B4EC81BE9913500E1C48A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6B6C88211B69B12C00F88EDB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B1B4EC51BE9913500E1C48A;
+			remoteInfo = "Inspire Love Watch App Extension";
+		};
+		6B1B4ED21BE9913500E1C48A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6B6C88211B69B12C00F88EDB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B1B4EB91BE9913500E1C48A;
+			remoteInfo = "Inspire Love Watch App";
+		};
 		6B6C883F1B69B12C00F88EDB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6B6C88211B69B12C00F88EDB /* Project object */;
@@ -32,11 +54,43 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		6B1B4E8B1BE97E6E00E1C48A /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				6B1B4ED41BE9913500E1C48A /* Inspire Love Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B1B4ED81BE9913500E1C48A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6B1B4EC71BE9913500E1C48A /* Inspire Love Watch App Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		6B1B4E601BE93CED00E1C48A /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
-		6B1B4E611BE93CED00E1C48A /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
-		6B1B4E621BE93CED00E1C48A /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
-		6B1B4E661BE93DEB00E1C48A /* Bridge-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridge-Header.h"; sourceTree = "<group>"; };
+		6B1B4EBA1BE9913500E1C48A /* Inspire Love Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Inspire Love Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B1B4EBD1BE9913500E1C48A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		6B1B4EBF1BE9913500E1C48A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6B1B4EC11BE9913500E1C48A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B1B4EC61BE9913500E1C48A /* Inspire Love Watch App Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Inspire Love Watch App Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B1B4ECB1BE9913500E1C48A /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		6B1B4ECD1BE9913500E1C48A /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		6B1B4ECF1BE9913500E1C48A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6B1B4ED11BE9913500E1C48A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B1B4EDE1BE99A9700E1C48A /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		6B1B4EE01BE9A32D00E1C48A /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		6B6C88291B69B12C00F88EDB /* Inspire Love.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Inspire Love.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B6C882D1B69B12C00F88EDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B6C882E1B69B12C00F88EDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -54,14 +108,18 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6B1B4EC31BE9913500E1C48A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6B6C88261B69B12C00F88EDB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B1B4E651BE93CED00E1C48A /* FBSDKShareKit.framework in Frameworks */,
 				6BDC90711B806BC4008EDF5E /* Social.framework in Frameworks */,
-				6B1B4E631BE93CED00E1C48A /* FBSDKCoreKit.framework in Frameworks */,
-				6B1B4E641BE93CED00E1C48A /* FBSDKLoginKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,15 +133,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6B1B4EBB1BE9913500E1C48A /* Inspire Love Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				6B1B4EBC1BE9913500E1C48A /* Interface.storyboard */,
+				6B1B4EBF1BE9913500E1C48A /* Assets.xcassets */,
+				6B1B4EC11BE9913500E1C48A /* Info.plist */,
+			);
+			path = "Inspire Love Watch App";
+			sourceTree = "<group>";
+		};
+		6B1B4ECA1BE9913500E1C48A /* Inspire Love Watch App Extension */ = {
+			isa = PBXGroup;
+			children = (
+				6B1B4EE01BE9A32D00E1C48A /* icon.png */,
+				6B1B4EDE1BE99A9700E1C48A /* background.png */,
+				6B1B4ECB1BE9913500E1C48A /* InterfaceController.swift */,
+				6B1B4ECD1BE9913500E1C48A /* ExtensionDelegate.swift */,
+				6B1B4ECF1BE9913500E1C48A /* Assets.xcassets */,
+				6B1B4ED11BE9913500E1C48A /* Info.plist */,
+			);
+			path = "Inspire Love Watch App Extension";
+			sourceTree = "<group>";
+		};
 		6B6C88201B69B12C00F88EDB = {
 			isa = PBXGroup;
 			children = (
-				6B1B4E601BE93CED00E1C48A /* FBSDKCoreKit.framework */,
-				6B1B4E611BE93CED00E1C48A /* FBSDKLoginKit.framework */,
-				6B1B4E621BE93CED00E1C48A /* FBSDKShareKit.framework */,
 				6BDC90701B806BC4008EDF5E /* Social.framework */,
 				6B6C882B1B69B12C00F88EDB /* Inspire Love */,
 				6B6C88411B69B12C00F88EDB /* Inspire LoveTests */,
+				6B1B4EBB1BE9913500E1C48A /* Inspire Love Watch App */,
+				6B1B4ECA1BE9913500E1C48A /* Inspire Love Watch App Extension */,
 				6B6C882A1B69B12C00F88EDB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -93,6 +173,8 @@
 			children = (
 				6B6C88291B69B12C00F88EDB /* Inspire Love.app */,
 				6B6C883E1B69B12C00F88EDB /* Inspire LoveTests.xctest */,
+				6B1B4EBA1BE9913500E1C48A /* Inspire Love Watch App.app */,
+				6B1B4EC61BE9913500E1C48A /* Inspire Love Watch App Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -111,12 +193,11 @@
 		6B6C882C1B69B12C00F88EDB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6BC6D0D01B7028D0009E86C4 /* quotes.json */,
 				6B6C88321B69B12C00F88EDB /* Main.storyboard */,
 				6B6C88371B69B12C00F88EDB /* LaunchScreen.xib */,
-				6BC6D0D01B7028D0009E86C4 /* quotes.json */,
 				6B6C88351B69B12C00F88EDB /* Images.xcassets */,
 				6B6C882E1B69B12C00F88EDB /* AppDelegate.swift */,
-				6B1B4E661BE93DEB00E1C48A /* Bridge-Header.h */,
 				6B6C882D1B69B12C00F88EDB /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -142,6 +223,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		6B1B4EB91BE9913500E1C48A /* Inspire Love Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B1B4ED91BE9913500E1C48A /* Build configuration list for PBXNativeTarget "Inspire Love Watch App" */;
+			buildPhases = (
+				6B1B4EB81BE9913500E1C48A /* Resources */,
+				6B1B4ED81BE9913500E1C48A /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6B1B4EC91BE9913500E1C48A /* PBXTargetDependency */,
+			);
+			name = "Inspire Love Watch App";
+			productName = "Inspire Love Watch App";
+			productReference = 6B1B4EBA1BE9913500E1C48A /* Inspire Love Watch App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		6B1B4EC51BE9913500E1C48A /* Inspire Love Watch App Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B1B4ED51BE9913500E1C48A /* Build configuration list for PBXNativeTarget "Inspire Love Watch App Extension" */;
+			buildPhases = (
+				6B1B4EC21BE9913500E1C48A /* Sources */,
+				6B1B4EC31BE9913500E1C48A /* Frameworks */,
+				6B1B4EC41BE9913500E1C48A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Inspire Love Watch App Extension";
+			productName = "Inspire Love Watch App Extension";
+			productReference = 6B1B4EC61BE9913500E1C48A /* Inspire Love Watch App Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		6B6C88281B69B12C00F88EDB /* Inspire Love */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6B6C88481B69B12C00F88EDB /* Build configuration list for PBXNativeTarget "Inspire Love" */;
@@ -149,10 +264,12 @@
 				6B6C88251B69B12C00F88EDB /* Sources */,
 				6B6C88261B69B12C00F88EDB /* Frameworks */,
 				6B6C88271B69B12C00F88EDB /* Resources */,
+				6B1B4E8B1BE97E6E00E1C48A /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				6B1B4ED31BE9913500E1C48A /* PBXTargetDependency */,
 			);
 			name = "Inspire Love";
 			productName = "Inspire Love";
@@ -183,10 +300,17 @@
 		6B6C88211B69B12C00F88EDB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0700;
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "The Love Foundation";
 				TargetAttributes = {
+					6B1B4EB91BE9913500E1C48A = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = VLGV9QQCJ9;
+					};
+					6B1B4EC51BE9913500E1C48A = {
+						CreatedOnToolsVersion = 7.1;
+					};
 					6B6C88281B69B12C00F88EDB = {
 						CreatedOnToolsVersion = 6.4;
 						DevelopmentTeam = VLGV9QQCJ9;
@@ -212,11 +336,34 @@
 			targets = (
 				6B6C88281B69B12C00F88EDB /* Inspire Love */,
 				6B6C883D1B69B12C00F88EDB /* Inspire LoveTests */,
+				6B1B4EB91BE9913500E1C48A /* Inspire Love Watch App */,
+				6B1B4EC51BE9913500E1C48A /* Inspire Love Watch App Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		6B1B4EB81BE9913500E1C48A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B1B4EC01BE9913500E1C48A /* Assets.xcassets in Resources */,
+				6B1B4EBE1BE9913500E1C48A /* Interface.storyboard in Resources */,
+				6B1B4EDC1BE9931000E1C48A /* quotes.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B1B4EC41BE9913500E1C48A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B1B4EE11BE9A32D00E1C48A /* icon.png in Resources */,
+				6B1B4EDD1BE9931200E1C48A /* quotes.json in Resources */,
+				6B1B4EDF1BE99A9700E1C48A /* background.png in Resources */,
+				6B1B4ED01BE9913500E1C48A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6B6C88271B69B12C00F88EDB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -238,6 +385,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		6B1B4EC21BE9913500E1C48A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B1B4ECE1BE9913500E1C48A /* ExtensionDelegate.swift in Sources */,
+				6B1B4ECC1BE9913500E1C48A /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6B6C88251B69B12C00F88EDB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -260,6 +416,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		6B1B4EC91BE9913500E1C48A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6B1B4EC51BE9913500E1C48A /* Inspire Love Watch App Extension */;
+			targetProxy = 6B1B4EC81BE9913500E1C48A /* PBXContainerItemProxy */;
+		};
+		6B1B4ED31BE9913500E1C48A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6B1B4EB91BE9913500E1C48A /* Inspire Love Watch App */;
+			targetProxy = 6B1B4ED21BE9913500E1C48A /* PBXContainerItemProxy */;
+		};
 		6B6C88401B69B12C00F88EDB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 6B6C88281B69B12C00F88EDB /* Inspire Love */;
@@ -268,6 +434,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		6B1B4EBC1BE9913500E1C48A /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B1B4EBD1BE9913500E1C48A /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		6B6C88321B69B12C00F88EDB /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -287,6 +461,72 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		6B1B4ED61BE9913500E1C48A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = "Inspire Love Watch App Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.thelovefoundation.Inspire-Love.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		6B1B4ED71BE9913500E1C48A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Inspire Love Watch App Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.thelovefoundation.Inspire-Love.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		6B1B4EDA1BE9913500E1C48A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Inspire_Love_Watch_App_Extension;
+				INFOPLIST_FILE = "Inspire Love Watch App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.thelovefoundation.Inspire-Love.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		6B1B4EDB1BE9913500E1C48A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Inspire_Love_Watch_App_Extension;
+				INFOPLIST_FILE = "Inspire Love Watch App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.thelovefoundation.Inspire-Love.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
 		6B6C88461B69B12C00F88EDB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -387,7 +627,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.thelovefoundation.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "Inspire Love/Bridge-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -408,7 +647,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.thelovefoundation.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "Inspire Love/Bridge-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Release;
@@ -452,6 +690,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		6B1B4ED51BE9913500E1C48A /* Build configuration list for PBXNativeTarget "Inspire Love Watch App Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B1B4ED61BE9913500E1C48A /* Debug */,
+				6B1B4ED71BE9913500E1C48A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6B1B4ED91BE9913500E1C48A /* Build configuration list for PBXNativeTarget "Inspire Love Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B1B4EDA1BE9913500E1C48A /* Debug */,
+				6B1B4EDB1BE9913500E1C48A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		6B6C88241B69B12C00F88EDB /* Build configuration list for PBXProject "Inspire Love" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

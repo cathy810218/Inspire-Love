@@ -9,7 +9,7 @@
 import UIKit
 
 class SupportUsViewController: UIViewController {
-  var iPadFontSize : CGFloat = 25
+  var iPadFontSize : CGFloat = 30
   
   @IBAction func donationButtonPressed(sender: UIButton) {
     
